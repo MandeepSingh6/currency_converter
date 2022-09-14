@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <main>
+      <form action="#" name="form1">
+        <div class="heading">Currency Exchange</div>
+        <span>Amount</span>
+        <input type="text" name="amount" value = "1" id="amonutToConvert" />
+        <div class="boxes">
+          <div class="box1">
+            <span>From</span>
+            <div class="selectBox">
+              <img src="https://flagcdn.com/48x36/us.png" alt="" />
+              <select name="exchangeFrom" id="exFrom"></select>
+            </div>
+          </div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/318/318147.png"
+            id="reverse"
+            alt=""
+          />
+          <div class="box2">
+            <span>To</span>
+            <div class="selectBox">
+              <img src="https://flagcdn.com/48x36/ca.png" alt="" />
+              <select name="exchangeTo" id="exTo"></select>
+            </div>
+          </div>
+        </div>
+        <div class="output"></div>
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+    <script src="currencies.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
